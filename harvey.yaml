@@ -46,9 +46,9 @@ icp:
 
 channels:
   email:
-    enabled: true
+    enabled: false
     provider: "gmail"          # gmail (recommended) | microsoft | smtp | instantly
-    max_daily_sends: 50
+    max_daily_sends: 0
     require_approval: true      # native: review in Outbox; Instantly: sending held
     send_to_risky: false        # also send to catch-all domains (off = safest)
     max_bounce_rate: 0.05       # pause all sending if bounces exceed this
